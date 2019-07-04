@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,8 @@
   },
   "dependencies": {
     "express": "^4.14.0",
-    "hbs": "^4.0.0"
-  }
+    "hbs": "^4.0.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
